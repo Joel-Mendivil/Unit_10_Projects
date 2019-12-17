@@ -18,8 +18,49 @@ audio{
     display: block;
     box-shadow: darkgray 8px 8px 15px;
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
 }
 audio::-webkit-media-controls-panel{
-    background-color: rgb(128,128,255);
+    background-color: rgb(248, 3, 3);
 }
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    23% {transform: rotate(0deg);}
+    28% {transform: rotate(90deg);}
+    39% {transform: rotate(90deg);}
+    42% {transform: rotate(180deg);}
+    68% {transform: rotate(180deg);}
+    72% {transform: rotate(270deg);}
+    90% {transform: rotate(270deg);}
+    94% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+
+}
+nav{
+    background: linear-gradient(red,orange,yellow,rgb(0, 225, 0),rgb(0, 183, 255),rgb(230, 5, 230));
+}
+section#main{
+    background: linear-gradient(red,orange,yellow,rgb(0, 225, 0),rgb(0, 183, 255),rgb(230, 5, 230));
+}
+section.poem{
+    background: linear-gradient(red,orange,yellow,rgb(0, 255, 0),rgb(1, 187, 26),rgb(1, 126, 18));
+}
+iframe{
+    background: linear-gradient(red,orange,yellow,rgb(0, 225, 0),rgb(0, 183, 255),rgb(230, 5, 230));
+}
+nav a{
+    color: rgb(255,255,255);
+    font-size: 1em;
+    letter-spacing: 0em;
+    text-shadow: rgba(0,0,0,1) 1px -1px 1px;
+    transition: color 1.5s ease-in 0.5s,
+       font-size 2s ease-out,
+       letter-spacing 2s ease,
+       text-shadow 2s cubic-bezier(0.6, 0, 0.8, 0.5);
+ }
+ nav a:hover{
+    color: rgb(4, 0, 255);
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-shadow: rgba(0,0,0,0.5) 15px -3px 8px;
+ }
